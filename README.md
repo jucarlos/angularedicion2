@@ -14,6 +14,8 @@ git status ( debería verse todo verde)
 
 git commit -m "Terminadas las rutas de la aplicación" ( para sacar la foto )
 
+git log ( pues los logs)
+
 
 Para recuperar del repositorio local algo borrado.
 
