@@ -5,20 +5,27 @@
 
 ## Comandos de git.
 
+( para ver como están los archivos)
+
 ``git status`` 
 
-( para ver como están los archivos)
-```git add .```  
 ( añadir al escenario de git )
-```git status ```
+
+```git add .```  
 
 ( debería verse todo verde)
-```git commit -m "Terminadas las rutas de la aplicación"``` 
+
+```git status ```
 
 ( para sacar la foto )
 
-```git log ```
+```git commit -m "Terminadas las rutas de la aplicación"``` 
+
+
 ( pues los logs)
+
+```git log ```
+
 
 Para recuperar del repositorio local algo borrado.
 
