@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
-    titulo = 'Titulo de la aplicación';
+    titulo = 'Angular Ed. 2';
 
     
 
