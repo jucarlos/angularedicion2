@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { TEMARIO } from 'src/app/data/datostemario.json';
+
+import { Tema } from '../../interfaces/tema.interface';
+import { TemarioService } from './../../services/temario.service';
 
 @Component({
   selector: 'app-temario',
@@ -7,11 +11,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemarioComponent implements OnInit {
 
-  constructor() { }
+  temas: Tema[] = [];
 
+  meGustan = 0;
+
+
+  constructor(private temarioService: TemarioService ) { }
+
+  
   ngOnInit(): void {
 
+    this.temas = this.temarioService.getTemario();
+
+  }
+
+  eventoRecibido( evento: number ): void {
+
+    this.meGustan = this.meGustan + evento;
     
   }
+  
 
 }

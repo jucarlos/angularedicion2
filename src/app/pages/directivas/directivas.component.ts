@@ -1,4 +1,7 @@
+import { TemarioService } from './../../services/temario.service';
 import { Component, OnInit } from '@angular/core';
+
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-directivas',
@@ -26,6 +29,9 @@ export class DirectivasComponent implements OnInit {
   mostrarOcultar(): void {
 
     this.mostrarColegio = !this.mostrarColegio;
+
+    Swal.fire('Hecho', 'Pues ya lo hemos mostrado', 'success');
+
   }
 
 }

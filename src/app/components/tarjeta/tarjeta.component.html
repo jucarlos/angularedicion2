@@ -1,0 +1,20 @@
+
+
+<div class="card mb-3">
+    <img *ngIf="mostrarImagen"
+    src="../../../assets/img/angularPicture.png" class="mimagen">
+
+    <div class="card-header">{{ cabecera }} - {{ numero }}</div>
+    <div class="card-body text-primary">
+        <h4 class="text-title"> {{ dato.titulo }} </h4>
+        <p class="card-text">  {{ dato.contenido  }} </p>
+        <hr>
+        <button 
+            (click)="meGusta()"
+            class="btn btn-primary">
+            <i class="far fa-thumbs-up"></i>
+            Me Gusta
+        </button>
+    </div>
+
+</div>
