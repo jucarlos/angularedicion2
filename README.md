@@ -69,6 +69,10 @@ Para recuperar del repositorio local algo borrado.
 
     ng g p pipes/alreves
 
+    subir a git.
+
+
+
 
 
 
