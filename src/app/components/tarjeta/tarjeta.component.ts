@@ -1,4 +1,3 @@
-import { TemarioService } from './../../services/temario.service';
 import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
 
 

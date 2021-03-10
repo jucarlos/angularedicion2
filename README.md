@@ -28,7 +28,7 @@
 
 Para recuperar del repositorio local algo borrado.
 
-`git checkout -- .`
+```git checkout -- .```
 
 
 # TAREAS PARA EL MARTES.
@@ -70,6 +70,54 @@ Para recuperar del repositorio local algo borrado.
     ng g p pipes/alreves
 
     subir a git.
+
+# TAREAS PARA EL MIÉRCOLES.
+
+- Para actualizar repositorio : git pull.
+
+- Crear una página con los paises.
+        - Tipado de los objetos paises.
+        Ayudados de https://quicktype.io/
+
+- Angular material.
+        - Modularizar.
+
+- Crud Clientes.
+    Hace falta saber las Apis del servidor:
+    Obtener la lista de clientes:
+        https://backend-marco.herokuapp.com/cliente
+        Por defecto devuelve los 5 primeros
+        
+        ?
+        limite=10
+        &desde=0
+
+    - Borrar un cliente:
+    (delete) https://backend-marco.herokuapp.com/cliente/6008288c977de2001739d058
+
+
+
+
+  
+# TAREAS PARA EL JUEVES 
+
+- Usuarios y seguridad
+- Ejercicio con socket
+- Usuarios
+- Formularios 
+
+
+Viernes:
+    ... Modulos y carga perezosa.
+
+
+
+
+
+
+
+
+
 
 
 
