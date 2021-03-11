@@ -2,6 +2,9 @@
 
 ## Ejercicio de Angular - Edición 2
 
+Queremos llegar a:
+https://cursoangularjccm.firebaseapp.com/#/home
+
 ### Comandos de git.
 
 ( para ver como están los archivos)
@@ -85,7 +88,7 @@ Para recuperar del repositorio local algo borrado.
 - Crud Clientes.
     Hace falta saber las Apis del servidor:
     Obtener la lista de clientes:
-        https://backend-marco.herokuapp.com/cliente
+    (get)  https://backend-marco.herokuapp.com/cliente
         Por defecto devuelve los 5 primeros
         
         ?
@@ -94,12 +97,44 @@ Para recuperar del repositorio local algo borrado.
 
     - Borrar un cliente:
     (delete) https://backend-marco.herokuapp.com/cliente/6008288c977de2001739d058
+    - Crear un cliente
+    ( post ) https://backend-marco.herokuapp.com/cliente
+        - body en x-www-url-..  nombre, identificador, email
 
+    - Modificar un cliente
+    ( put ) https://backend-marco.herokuapp.com/cliente/idcliente
+        - body en x-www-url-..  nombre, identificador, email  
+
+Problema de GitHub
+Poner en host del equipo local:
+
+    140.82.114.3    github.com
+    185.199.108.153    github.io
 
 
 
   
 # TAREAS PARA EL JUEVES 
+
+- Terminar el crud de clientes
+
+usamos para copiar código https://github.com/jucarlos/apuntesCursoAngular
+
+- Formulario
+Para usar formularios por template es necesario importar FormsModule
+
+
+- Socket. Gráficos ( https://valor-software.com/ng2-charts/ )
+
+http://10.128.222.79:3000/grafica
+
+
+- Login, registro, usuario, token.
+(post ) https://backend-marco.herokuapp.com/login
+en body x-www-urlen... email y password
+
+
+- Formularios
 
 - Usuarios y seguridad
 - Ejercicio con socket
@@ -107,8 +142,15 @@ Para recuperar del repositorio local algo borrado.
 - Formularios 
 
 
-Viernes:
-    ... Modulos y carga perezosa.
+# TAREAS PARA VIERNES
+
+    - Registro NO.
+    - Guards ( login )
+    - Componente Tipo Vehiculo para probar token y guard
+    - Formularios. 
+    - Preguntas.
+
+    - Interceptores, Modulos y carga perezosa.
 
 
 

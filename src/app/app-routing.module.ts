@@ -1,3 +1,4 @@
+import { GraficaComponent } from './pages/grafica/grafica.component';
 import { ClienteComponent } from './pages/clientes/cliente/cliente.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from "@angular/core";
@@ -20,6 +21,7 @@ const routes: Routes = [
     { path: 'paises', component: PaisesComponent },
     { path: 'clientes', component: ClientesComponent  },
     { path: 'cliente/:id', component: ClienteComponent  },
+    { path: 'grafica', component: GraficaComponent  },
     { path: '**', redirectTo: 'home'}
 ]
 

@@ -1,5 +1,9 @@
+
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+// Formularios
+import { FormsModule } from '@angular/forms';
 
 // http
 import { HttpClientModule } from '@angular/common/http';
@@ -31,6 +35,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Módulo de los componentes de material
 import { MaterialModule } from './material/material.module';
 import { ClienteComponent } from './pages/clientes/cliente/cliente.component';
+import { GraficaComponent } from './pages/grafica/grafica.component';
+
+// Graficas
+import { ChartsModule } from 'ng2-charts';
+
+// Socket
+import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
+
+import { URL_SOCKET } from './../environments/environment';
+import { ModalComponent } from './components/modal/modal.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
+
+const config: SocketIoConfig = { url: URL_SOCKET, options: {} };
+
 
 registerLocaleData( localeES );
 
@@ -48,13 +66,19 @@ registerLocaleData( localeES );
     AlrevesPipe,
     ClientesComponent,
     ClienteComponent,
+    GraficaComponent,
+    ModalComponent,
+    UsuarioComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ChartsModule,
+    SocketIoModule.forRoot(config)
   ],
   providers: [
     {

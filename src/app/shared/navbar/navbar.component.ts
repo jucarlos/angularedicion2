@@ -1,3 +1,4 @@
+import { UsuarioService } from './../../services/usuarios.service';
 import { Component } from '@angular/core';
 
 
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
      templateUrl: './navbar.component.html',
 })
 export class NavbarComponent {
+
+    constructor(public usuarioService: UsuarioService) {}
 
     titulo = 'Angular Ed. 2';
 

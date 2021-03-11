@@ -1,5 +1,26 @@
 .bandera {
     width: 50px;
 }
+
+.w150 {
+    width: 150px;
+}
+
+.w100 {
+    width: 100px;
+}
+
+
+.w70 {
+    width: 70px;
+}
+
+.w40 {
+    width: 40px;
+}
+
+
+
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

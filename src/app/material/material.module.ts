@@ -6,6 +6,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { MatSliderModule } from '@angular/material/slider';
     MatSnackBarModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSliderModule
+    MatSliderModule,
+    MatButtonModule
   ],
   imports: [
     CommonModule
