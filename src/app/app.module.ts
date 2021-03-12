@@ -3,7 +3,7 @@ import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Formularios
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // http
 import { HttpClientModule } from '@angular/common/http';
@@ -46,6 +46,12 @@ import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 import { URL_SOCKET } from './../environments/environment';
 import { ModalComponent } from './components/modal/modal.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
+import { TipoVehiculosComponent } from './pages/tipo-vehiculos/tipo-vehiculos.component';
+import { ImagenPipe } from './pipes/imagen.pipe';
+
+import { TemplateComponent } from './pages/formularios/template/template.component';
+import { ReactivosComponent } from './pages/formularios/reactivos/reactivos.component';
+
 
 const config: SocketIoConfig = { url: URL_SOCKET, options: {} };
 
@@ -69,11 +75,16 @@ registerLocaleData( localeES );
     GraficaComponent,
     ModalComponent,
     UsuarioComponent,
+    TipoVehiculosComponent,
+    ImagenPipe,
+    TemplateComponent,
+    ReactivosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,

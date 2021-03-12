@@ -25,6 +25,10 @@ export class UsuarioService {
     {'Content-Type': 'application/json'}
   );
 
+  get tokenOtrotoken() {
+      return this.token;
+  }
+
   constructor(private http: HttpClient ) {
     
     this.cargarStorage();
@@ -99,6 +103,8 @@ export class UsuarioService {
 
 
   guardarStorage( nombre: string, token: string , usuario: Usuario) {
+
+
     
     localStorage.setItem('nombre', nombre);
     localStorage.setItem('token', token);

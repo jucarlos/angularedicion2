@@ -1,3 +1,4 @@
+import { TemplateComponent } from './pages/formularios/template/template.component';
 import { GraficaComponent } from './pages/grafica/grafica.component';
 import { ClienteComponent } from './pages/clientes/cliente/cliente.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -10,10 +11,12 @@ import { HomeComponent } from './pages/home/home.component';
 import { PaisesComponent } from './pages/paises/paises.component';
 import { PipesComponent } from './pages/pipes/pipes.component';
 import { TemarioComponent } from './pages/temario/temario.component';
+import { TipoVehiculosComponent } from './pages/tipo-vehiculos/tipo-vehiculos.component';
 
+import { AuthGuard } from './guards/auth.guard';
+import { ReactivosComponent } from './pages/formularios/reactivos/reactivos.component';
 
 const routes: Routes = [
-
     { path: 'home', component: HomeComponent },
     { path: 'temario', component: TemarioComponent },
     { path: 'directivas', component: DirectivasComponent },
@@ -22,6 +25,9 @@ const routes: Routes = [
     { path: 'clientes', component: ClientesComponent  },
     { path: 'cliente/:id', component: ClienteComponent  },
     { path: 'grafica', component: GraficaComponent  },
+    { path: 'tipovehiculo', component: TipoVehiculosComponent , canActivate: [ AuthGuard ] },
+    { path: 'template', component: TemplateComponent },
+    { path: 'reactivos', component: ReactivosComponent },
     { path: '**', redirectTo: 'home'}
 ]
 

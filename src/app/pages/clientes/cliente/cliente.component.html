@@ -77,7 +77,7 @@
           <h4 class="card-title">Foto del cliente</h4>
           <h6 class="card-subtitle"></h6>
   
-          <img *ngIf="!imagenTemp" [src]="cliente.clouds " class="w150">
+          <img *ngIf="!imagenTemp" [src]="cliente.clouds | imagen" class="w150">
           <img *ngIf="imagenTemp" [src]="imagenTemp" class="w150">
   
           <input type="file" (change)="seleccionImagen( $event.target.files[0] )">

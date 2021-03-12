@@ -132,6 +132,7 @@ http://10.128.222.79:3000/grafica
 - Login, registro, usuario, token.
 (post ) https://backend-marco.herokuapp.com/login
 en body x-www-urlen... email y password
+jwt.io
 
 
 - Formularios
@@ -143,38 +144,29 @@ en body x-www-urlen... email y password
 
 
 # TAREAS PARA VIERNES
+https://github.com/jucarlos/cursoangular_ejercicio
 
+https://github.com/jucarlos/apuntesCursoAngular
+
+    - Repaso
     - Registro NO.
-    - Guards ( login )
     - Componente Tipo Vehiculo para probar token y guard
+
+     - Guards ( login )
+     
+    - Pipe imagen
+
     - Formularios. 
-    - Preguntas.
+       - Template. ( en app.module: FormsModule )
+       - Reactivos. ( en app.module: ReactiveFormsModule )
+    
+    - Preguntas - Encuesta
 
-    - Interceptores, Modulos y carga perezosa.
+    app nueva - git 
+    - Interceptores, Modulos y carga perezosa. ( Mostrar la app Tyké)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    - Guía de arquitectura y buenas prácticas
+    - Generador de aplicaciones.
 
 
 

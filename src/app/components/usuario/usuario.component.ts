@@ -11,6 +11,7 @@ export class UsuarioComponent implements OnInit {
   constructor(public usuarioService: UsuarioService) { }
 
   ngOnInit(): void {
+
   }
 
 }
